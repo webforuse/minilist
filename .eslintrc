@@ -1,0 +1,45 @@
+{
+    "extends": ["airbnb"],
+    "parser": "babel-eslint",
+    "plugins": ["prettier", "react-hooks", "react-native"],
+    "globals":
+      {
+        "fetch": true,
+        "navigator": true,
+        "window": true ,
+        "global": true,
+        "store": false
+      },
+    "rules": {
+      "max-len": [
+              "error",
+              {
+                  "code": 500,
+                  "ignoreComments": true,
+                  "ignoreUrls": true,
+                  "ignoreStrings": true,
+                  "ignoreTemplateLiterals": true,
+                  "ignoreRegExpLiterals": true
+              }
+      ],
+      "react/jsx-indent": ["error", "tab"],
+          "react/jsx-indent-props": ["error", "tab"],
+      "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+      "react/jsx-props-no-spreading": "off",
+      "import/prefer-default-export": "off",
+      "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+      "no-console": "off",
+      "no-mixed-operators": 0, // Pretty dumb rule that denies "a * b / c".
+      "no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+      "no-param-reassign":"off",
+      "react/prop-types": "off",
+      "react/jsx-no-bind": "off",
+      "no-underscore-dangle": ["error", { "allow": ["_id", "_root"] }],
+      "no-nested-ternary": "off",
+      "indent": ["error", "tab"],
+      "no-tabs": 0,
+      "class-methods-use-this": [2, { "exceptMethods": ["componentDidAppear", "render", "componentDidMount", "shouldComponentUpdate"] }],
+      "react-hooks/rules-of-hooks": "error", // Проверяем правила хуков
+      "react-hooks/exhaustive-deps": "warn" // Проверяем зависимости эффекта
+    }
+  }

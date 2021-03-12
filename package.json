@@ -1,0 +1,60 @@
+{
+  "name": "minilist",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "build-android-release": "cd android && ./gradlew app:assembleRelease",
+    "build-android-prod": "cd android && ./gradlew clean && ./gradlew app:assembleRelease",
+    "clean-project": "rm -rf node_modules && cd ios && rm -rf Pods && rm -rf Podfile.lock",
+    "android-clean": "cd android && ./gradlew clean",
+    "ios-se": "react-native run-ios --simulator='iPhone SE'",
+    "ios-11": "react-native run-ios --simulator='iPhone 11'",
+    "ios-X": "react-native run-ios --simulator='iPhone X'",
+    "ios-se-12": "react-native run-ios --simulator='iPhone SE 12'",
+    "ios-se-13": "react-native run-ios --simulator='iPhone SE 13'",
+    "ios-se2-13": "react-native run-ios --simulator='iPhone SE2 13'",
+    "ios-se-14": "react-native run-ios --simulator='iPhone SE 14'",
+    "ios-11Pro": "react-native run-ios --simulator='iPhone 11Pro'"
+  },
+  "dependencies": {
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "lodash": "^4.17.21",
+    "react": "16.13.1",
+    "react-native": "0.63.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@babel/plugin-proposal-decorators": "^7.12.12",
+    "@babel/plugin-proposal-export-default-from": "^7.12.1",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^26.6.3",
+    "babel-preset-airbnb": "^5.0.0",
+    "babel-preset-react-native": "^4.0.1",
+    "eslint": "^7.12.1",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-react-native": "^3.10.0",
+    "eslint-watch": "^7.0.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.63.0",
+    "prettier": "^2.1.2",
+    "prettier-eslint": "^11.0.0",
+    "react-test-renderer": "16.13.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
